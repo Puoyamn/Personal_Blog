@@ -1,0 +1,267 @@
+/* تنظیمات برای نمایش در گوشی‌ها (عرض کمتر از 768px) */
+@media screen and (max-width: 768px) {
+    /* تنظیمات برای نوار بالا */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: blue;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 40px;
+    }
+    
+    header .logo {
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: 700;
+        margin-right: 40px;
+    }
+    
+    header .nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    header .nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    
+    .nav li {
+        font-size: 30px;
+        list-style-type: none;
+    }
+    
+    .nav2 li {
+        background: black;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 25px;
+    }
+    
+    .nav2 a {
+        margin-left: 200px;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    
+    /* تنظیمات بدنه */
+    body {
+        background: white;
+        margin-top: 200px;
+        margin-right: 0px;
+        padding: 0;
+        text-align: right; 
+    }
+    
+    h1 {
+        font-size: 90px;
+        margin: 0;
+        margin-right: 120px;
+        text-align: right; 
+        flex-grow: 1;
+    }
+    
+    span{
+        color: blue;
+        
+    }
+    
+    
+    h4 {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        margin-right: 120px;
+        text-align: right; 
+    }
+    .dokme a{
+        font-size:39px;
+        margin-right:120px;
+        padding: 20px;
+        background-color: #007bff;
+        text-decoration:none;
+        border-radius: 25px;
+        width: fit-content;
+        color: blanchedalmond;
+    }
+    /* تنظیمات عکس */
+    
+    .profile-image {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        left: 200px;; 
+        display: block; 
+        margin-left:20px;
+        margin-right: auto;
+        border:0;
+        font-size:60%
+    
+    }
+    /* تنظیمات برای محتوا کانتینر */
+    .content-container {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+    
+    .icon-line {
+        display: flex; 
+        align-items: center; 
+        background-color: #5e5151a8; 
+        padding: 50px; 
+        margin-top: 150px;
+        margin-right:0;
+    }
+    
+    .icon-line i {
+        font-size: 90px; 
+        margin: 0 240px; 
+        color: #e9e503; 
+    }
+    
+    /* قسمت دوم سایت */
+    
+    .profile-image2 {
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        left: 200px;
+        display: block; 
+        margin-left:20px;
+        margin-right: auto;
+        margin-top:150px;
+        border:0;
+        font-size:60%
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .about2 h2 {
+        font-size: 90px;
+        color: blue;
+        margin: 0;
+        margin-right: 120px;
+        text-align: right;
+        flex-grow: 1;
+    }
+    
+    .about2 span{
+        color: blue;
+        
+    }
+    .about2 h3{
+        font-size: 50px;
+        margin: 0;
+        margin-right: 120px;
+        text-align: right; 
+      
+    }
+    
+    .about2 h4{
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        margin-right: 120px;
+        text-align: right; 
+    }
+    .emtyaz a{
+        font-size:39px;
+        margin-right:120px;
+        padding: 20px;
+        background-color: #007bff;
+        text-decoration:none;
+        border-radius: 25px;
+        width: fit-content;
+        color: blanchedalmond;
+    }
+    
+    
+    /* ساخت محفظه امتیاز */
+    
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        margin-right:0;
+    }
+      @keyframes load{
+        from {
+          width: 0%
+        }
+      }
+      @-webkit-keyframes load{
+        from {
+          width: 0%
+        }
+      }
+      @-moz-keyframes load{
+        from {
+          width: 0%
+        }
+      }
+      @-o-keyframes load{
+        from {
+          width: 0%
+        }
+      }
+      
+      .bar{
+        background-color: #EEE;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: #000000;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        
+      }
+      .bar::before{
+        content:  attr(data-skill);
+        background-color: #f3b0ff;
+        display: inline-block;
+        padding: 10px 0 5px 10px;
+        border-radius: inherit;
+        animation: load 2s 0s;
+        -webkit-animation: load 2s 0s;
+        -moz-animation: load 2s 0s;
+        -o-animation: load 2s 0s;
+      }
+      
+      .bar.front::before{
+        background-color: #ffcc33;
+      }
+      .bar.back::before{
+        background-color: #a6cfe3;
+      }
+      
+      .bar.learning::before{
+        width: calc(100% - 0px);
+      }
+      .bar.basic::before{
+        width: calc(90% - 10px);
+      }
+      .bar.intermediate::before{
+        width: calc(90% - 10px);
+      }
+      .bar.advanced::before{
+        width: calc(50% - 10px);
+      }
+      .bar.expert::before{
+        width: calc(70% - 10px);
+      }
+}
